@@ -2,20 +2,32 @@
 const { variant, img, tag, text } = Astro.props;
 ---
 
+<div class="test">
 <article class={variant}>
   <img src={img} />
   <p class="tag">{tag}</p>
   <p>{text}</p>
 </article>
+</div>
 
 <style>
+.test{
+  background-color: rgba(48, 33, 175, 1);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+}
+
   img {
     min-width: 100%;
+    margin-block: 30px;
+  
   }
 
   p {
     display: inline;
     line-height: 1.25rem;
+    color: white;
   }
   .tag {
     text-decoration: underline;

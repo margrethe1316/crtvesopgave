@@ -18,17 +18,33 @@ img {
   color: rgba(48, 33, 175, 1);
 }
 
-@media (min-width: 900px) {
-  .grid_3_1f {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-  }
+.cities {
+  background-color: rgba(48, 33, 175, 1);
+  padding-top: 20px;
+  padding-left: 30px;
+}
 
-  .grid_1_1f_1_2fr {
+.cities h3,
+h1 {
+  color: white;
+  margin-top: 15px;
+}
+
+.whatis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.whatis img {
+  max-width: 50%;
+}
+
+@media (min-width: 900px) {
+  .grid_1_1_1 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 
   .tekst_forside {
@@ -36,6 +52,10 @@ img {
     justify-content: center;
     align-items: center;
     font-size: 5rem;
-    padding-top: 50px;
+  }
+
+  .tekst_forside2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
