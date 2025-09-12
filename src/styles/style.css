@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.outline {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(48, 33, 175, 1);
+  margin-right: 0.5rem;
+}
+
+.tekst_forside {
+  color: rgba(48, 33, 175, 1);
+}
+
+@media (min-width: 900px) {
+  .grid_3_1f {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .grid_1_1f_1_2fr {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+  }
+
+  .tekst_forside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    padding-top: 50px;
+  }
+}
