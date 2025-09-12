@@ -10,7 +10,9 @@ import Header from "../components/Header.astro";
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<meta name="robots" content="noindex">
+
+		<title>Forside</title>
 	</head>
 
 <header>
@@ -31,9 +33,15 @@ import Header from "../components/Header.astro";
 	<h1>GET NEWSLETTERS EACH WEEK ABOUT YOUR UPCOMING DESTINATION</h1>
 </div>
 	<div class="grid_1_1_1">
+		<a href="berlin.astro">
 		<Card img="/imgs/ber_img.webp" tag="Local CRTV" text="Street Art walk in Copenhagen through the eyes of a digital designer" />
+		</a>
+		<a href="london.astro">
 		<Card img="/imgs/ldn_img.webp" tag="Local CRTV" text="Street Art walk in London through the eyes of a digital designer" />
+		</a>
+		<a href="kobenhavn.astro">
 		<Card img="/imgs/cph_img.webp" tag="Local CRTV" text="Street Art walk in Copenhagen through the eyes of a digital designer" />
+	</a>
 	</div>
 <div class="whatis">
 	<img src="public/whatis.svg" alt="">
