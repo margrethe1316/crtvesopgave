@@ -1,6 +1,8 @@
 ---
 import "../styles/style.css";
 import Joe from "../components/Joe.astro";
+import Hidden from "../components/Hidden.astro";
+
 ---
 
 <html lang="en">
@@ -20,6 +22,9 @@ import Joe from "../components/Joe.astro";
 
 		<Joe/>
     </body>
+<footer>
+	<Hidden>
+</footer>
 
 </html>
 
@@ -53,4 +58,9 @@ import Joe from "../components/Joe.astro";
 		max-width: none;
 		margin-left: -50%;
 	}
+
+	footer{
+max-width: none;
+	}
+
 </style>
