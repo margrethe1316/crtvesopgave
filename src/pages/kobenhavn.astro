@@ -1,0 +1,56 @@
+---
+import "../styles/style.css";
+import Joe from "../components/Joe.astro";
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <meta name="robots" content="noindex">
+		<title>København</title>
+	</head>
+
+    <body>
+        <h1>“more inspiration than you've ever seen before”</h1>
+		<h2>In Copenhagen you get so much inspiration to design everywere, because believe me... there obsessed with posters. </h2>
+		<img src="public/imgs/postervaeg.webp" alt="">
+
+		<Joe/>
+    </body>
+
+</html>
+
+<style>
+
+	h1{
+	font-size: 5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2rem;
+
+	}
+
+	h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	margin-top: 3rem;
+	}
+
+	body{
+		background-color: rgba(48, 33, 175, 1);
+		max-width: 120ch;
+		margin: 0 auto;
+	}
+
+	img{
+		margin-top: 4rem;
+		max-width: none;
+		margin-left: -50%;
+	}
+</style>
