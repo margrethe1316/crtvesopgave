@@ -1,4 +1,29 @@
 
+<!-- Burger/X button -->
+<div class="menu-btn" id="menu-btn">
+  <div></div>
+</div>
+
+<!-- Fullscreen menu -->
+<div class="menu-overlay" id="menu-overlay">
+  <div class="menu-links">
+    <a href="/">Landing Page</a>
+    <a href="/london">London</a>
+    <a href="/berlin">Berlin</a>
+    <a href="/kobenhavn">Copenhagen</a>
+  </div>
+
+  <div class="menu-footer">
+    <a href="/newsletter">Newsletter</a>
+    <a href="/contact">Contact</a>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById("menu-btn");
+  const overlay = document.getElementById("menu-overlay");
+</script>
+
 <style>
   .menu-btn {
     position: fixed;
@@ -95,28 +120,3 @@
     text-decoration: none;
   }
 </style>
-
-<!-- Burger/X button -->
-<div class="menu-btn" id="menu-btn">
-  <div></div>
-</div>
-
-<!-- Fullscreen menu -->
-<div class="menu-overlay" id="menu-overlay">
-  <div class="menu-links">
-    <a href="/">Landing Page</a>
-    <a href="/london">London</a>
-    <a href="/berlin">Berlin</a>
-    <a href="/kobenhavn">Copenhagen</a>
-  </div>
-
-  <div class="menu-footer">
-    <a href="/newsletter">Newsletter</a>
-    <a href="/contact">Contact</a>
-  </div>
-</div>
-
-<script>
-  const btn = document.getElementById("menu-btn");
-  const overlay = document.getElementById("menu-overlay");
-</script>
