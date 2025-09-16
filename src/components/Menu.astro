@@ -1,0 +1,129 @@
+---
+---
+
+<style>
+  .menu-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-btn div,
+  .menu-btn::before,
+  .menu-btn::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+  }
+
+  .menu-btn::before {
+    transform: translateY(-8px);
+  }
+
+  .menu-btn::after {
+    transform: translateY(8px);
+  }
+
+  /* X state */
+  .menu-btn.open div {
+    background: transparent;
+  }
+
+  .menu-btn.open::before {
+    transform: rotate(45deg);
+  }
+
+  .menu-btn.open::after {
+    transform: rotate(-45deg);
+  }
+
+  /* Fullscreen overlay */
+  .menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(48, 33, 175, 1);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem;
+    transform: translateX(100%);
+    transition: transform 0.4s ease;
+    z-index: 1000;
+  }
+
+  .menu-overlay.active {
+    transform: translateX(0);
+  }
+
+  .menu-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .menu-links a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu-footer {
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  .menu-footer a {
+    color: white;
+    text-decoration: none;
+  }
+</style>
+
+<!-- Burger/X button -->
+<div class="menu-btn" id="menu-btn">
+  <div></div>
+</div>
+
+<!-- Fullscreen menu -->
+<div class="menu-overlay" id="menu-overlay">
+  <div class="menu-links">
+    <a href="/">Landing Page</a>
+    <a href="/london">London</a>
+    <a href="/berlin">Berlin</a>
+    <a href="/kobenhavn">Copenhagen</a>
+  </div>
+
+  <div class="menu-footer">
+    <a href="/newsletter">Newsletter</a>
+    <a href="/contact">Contact</a>
+  </div>
+</div>
+
+<script>
+  const btn = document.getElementById("menu-btn");
+  const overlay = document.getElementById("menu-overlay");
+
+  btn.addEventListener("click", () => {
+    btn.classList.toggle("open");
+    overlay.classList.toggle("active");
+  });
+</script>
