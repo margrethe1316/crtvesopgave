@@ -3,6 +3,7 @@ import "../styles/style.css";
 import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import Menu from "../components/Menu.astro";
 
 ---
 
@@ -16,7 +17,9 @@ import Footer from "../components/Footer.astro";
 
 		<title>Forside</title>
 	</head>
-
+<nav>
+	<Menu>
+</nav>
 <header>
 	<Header>
 </header>
@@ -35,13 +38,13 @@ import Footer from "../components/Footer.astro";
 	<h1>GET NEWSLETTERS EACH WEEK ABOUT YOUR UPCOMING DESTINATION</h1>
 </div>
 	<div class="grid_1_1_1">
-		<a href="london">
+		<a href="berlin">
 		<Card img="/imgs/ber_img.webp" tag="Local CRTV" text="Street Art walk in Copenhagen through the eyes of a digital designer" />
 		</a>
-		<a href="kobenhavn">
+		<a href="london">
 		<Card img="/imgs/ldn_img.webp" tag="Local CRTV" text="Street Art walk in London through the eyes of a digital designer" />
 		</a>
-		<a href="berlin">
+		<a href="kobenhavn">
 		<Card img="/imgs/cph_img.webp" tag="Local CRTV" text="Street Art walk in Copenhagen through the eyes of a digital designer" />
 	</a>
 	</div>
